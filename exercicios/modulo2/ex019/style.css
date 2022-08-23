@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*Tudo que em HTML for chamado de (id) em CSS e Trocado por (#)
+  Tudo que em HTML for chamado de  (class) em CSS e Trocado por (.)
+  
+  diferença de ID para CLASS 
+  ID = só pode ser colocado uma vez apenas por arquivo para uma coisa ais especifica 
+  Class = é ultilizada em grupo como fizemos abaixo, selecionando um conjunto e mudando a cor.
+  podemos ultilizar ambas juntas sem problema algum desde que uma configuração não atrapalhe a outra exemplo usar um id de uma cor escura e querer usar um class com um backgraud-color de uma cor clara. ate funciona mais fica feio ou imperceptivel. sempre vai ficar a ultima configuração. podemosusar dua configuraçoes de id juntas tambem ou duas de class juntas tambem e so separa-las por espaço. */
+body{
+    background-color: rgb(74, 243, 243);
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    color: rgb(3, 3, 61);
+}
+h2{
+    color: blue;
+}
+#Principal {
+    color: black;
+    text-align: center;
+    background-color: rgb(91, 91, 233);
+}
+.basico{
+    color: rgb(74, 243, 243) ;
+}
+.intermediario{
+    color:rgb(161, 161, 231)
+}
+.avançado{
+    color: rgb(241, 111, 111);
+}
