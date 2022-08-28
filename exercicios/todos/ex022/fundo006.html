@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprendendo a dimencionar as imagens com texto</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body{height: 100vh;
-            background-color: black;
-            background-image:url(imagens/wallpaper002.jpg);
-            background-position: center center;
-            background-repeat: no-repeat;
+            
+
+            /* Shorthand - background
+          color > image > position > reapeat > [size] 
+          >attachment
+
+         * para usar apenas declaração para tudo isso acima no body*
+
+         obs: ainda não está funcionando o background-size dentro da shorthand
+            
+            */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
 
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
@@ -29,7 +38,7 @@
 
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae adipisci omnis sapiente culpa aut perspiciatis error distinctio vel nam veniam, eligendi eveniet saepe qui iusto, sed magni rerum corrupti laudantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odit doloribus quaerat impedit nostrum quidem? Reprehenderit ducimus sit blanditiis corrupti asperiores, unde maiores? Quae illo mollitia necessitatibus, repellat numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea voluptas, atque laboriosam omnis hic. Odio aspernatur ea optio odit eaque beatae corporis, hic ipsa, vitae qui iusto eveniet veritatis!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae adipisci omnis sapiente culpa aut perspiciatis error distinctio vel nam veniam, eligendi eveniet saepe qui iusto, sed magni rerum corrupti laudantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odit doloribus quaerat impedit nostrum quidem? Reprehenderit ducimus sit blanditiis corrupti asperiores, unde maiores? Quae illo mollitia necessitatibus, repellat numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea voluptas, atque laboriosam omnis hic. Odio aspernatur ea optio odit eaque beatae corporis, hic ipsa, vitae qui iusto eveniet veritatis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus vel quo fugiat ullam minus soluta ipsam velit? Facilis nesciunt est distinctio quo dolore, ullam mollitia provident accusantium reiciendis beatae ex officia impedit eveniet autem, esse porro. Nostrum fuga magnam qui itaque maiores praesentium libero hic explicabo. Distinctio officia natus quaerat alias possimus laudantium ad in placeat explicabo, suscipit deleniti labore nesciunt quod quos doloribus modi harum animi omnis ipsum sapiente fugit. Deleniti esse sit nobis in, minima quasi soluta aperiam. Voluptatum, fugiat ab placeat rerum commodi rem praesentium reprehenderit, illo dolores beatae nemo excepturi laboriosam dignissimos. Possimus magnam deleniti sequi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, assumenda. Hic, consequuntur accusamus! Quis eaque a cumque praesentium, ab dolorum earum temporibus? Eos neque cum nihil temporibus beatae, iste optio asperiores debitis quis rem laudantium unde voluptatibus, dolorem sunt ad assumenda blanditiis officiis ab nam. Incidunt reiciendis sed fuga! Magnam eaque neque error beatae, et ratione porro facere quia nostrum voluptate suscipit explicabo consequatur cum aut, itaque dolorem unde, repellat impedit ea quae. Quibusdam magni consequatur aut tempora repellendus ipsum omnis placeat, repudiandae eum autem earum illum, eligendi vero est delectus doloremque iusto in dolores esse dolorem commodi itaque dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corporis eos unde nihil vitae sapiente, nam voluptas recusandae, tempora nesciunt, est voluptate placeat magni assumenda enim dolor nemo vel omnis? Nemo ab voluptatem quaerat deserunt earum sunt, error minima in numquam quia consequuntur aliquid possimus aperiam temporibus rem ea accusamus? Architecto labore inventore impedit ex possimus. Assumenda commodi itaque dolores, cum pariatur recusandae saepe delectus praesentium exercitationem nobis iusto dolorem sint quibusdam ex placeat porro maiores sunt repellat illo eius deserunt ipsa architecto in aliquid! Ipsam soluta dignissimos nemo nisi commodi minima laboriosam provident voluptatibus. Blanditiis quae reprehenderit ex dolor.</p>
     </main>
     
 </body>
