@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <link rel="shortcut icon" href="cursoemvideo02.ico.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+   <form action="cadastro.php" method="post" autocomplete="on" >
+       <p>
+        <label for="iest">Estado: </label>
+        <select name="estado" id="iest" required>
+        <option value=""select >---Escolha---</option>
+
+        <optgroup label="Região Sudeste">
+        <option value="MG">Minas Gerais</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="SP">São Paulo</option>
+        <option value="RS">Rio Grande do Sul</option>
+        </optgroup>
+        <optgroup label="Regial Nordeste">
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="PE">Pernambuco</option>
+        <option value="MA">Maranhão</option>
+        <option value="PB">Paraíba</option>
+        <option value="BH">Bahia</option>
+        
+        </optgroup>
+     </select>
+    </p>
+
+    <p>
+          <label for="iprof">Profissão: </label>
+          <input type="text" name="prof" id="iprof" list="lstprof">
+          
+        <datalist id="lstprof">
+           <option>Administrador(a)</option>
+           <option >Agricultor (a)</option>
+           <option>Bancario</option>
+           <option>Barbeiro</option>
+           <option>Cozinheiro (a)</option>
+           <option>Cabeleleiro(a)</option>
+           <option>Gerente</option>
+           <option>Programador(a)</option>
+           <option>Desenvolvedor(a)</option>
+           <option>Ajudante Geral</option>
+           <option>Enfermeiro (a)</option>
+           <option>Médico (a)</option>
+           <option>Professor (a)</option>
+           <option>Autônomo (a)</option>
+           <option>Desempregado (a)</option>
+           <option>Estudante</option>
+           <option>Dentista</option>
+           <option>Supervior (a)</option>
+
+        </datalist>
+
+    </p>
+
+    <p>
+        <label for="imsg">Mensagem: </label><br>
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+
+
+
+
+   </form>
+    
+</body>
+</html>
