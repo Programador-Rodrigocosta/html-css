@@ -1,6 +1,48 @@
 @charset "UTF-8";
-/* Todas as demais mídeas */
+/* ----Todas as demais mídeas----- ////////
+-----------------------------
 
-@media print {
-    
+/////---Pesquisar sobre ---Typical device Breakpoints----/////
+--------------------------------------------------------------------
+Números abaixo feito pelo professor gustavo guanabara no ano de 2020--
+podem estar desatualizados
+site para consultar 
+https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp
+foi constatado que permanecem as mesmas configurações até 2022
+--------------------------------------------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet:de 768 px até 992px
+Desktop: de 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media print { /*impressão*/
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px) { /*tablet */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+     }
+     #phone {display: none;}
+     #tablet {display: block;}
+     #print {display: none;}
+     #pc {display: none;}
+     #tv {display: none;}
+
+
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*Desktop*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone {display: none;}
+     #tablet {display: none;}
+     #print {display: none;}
+     #pc {display: block;}
+     #tv {display: none;}
+
+}
+@media screen and (min-width: 1200px) { /*grandes telas*/
+
 }
