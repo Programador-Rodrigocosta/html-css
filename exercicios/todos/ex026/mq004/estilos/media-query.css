@@ -1,26 +1,46 @@
 @charset "UTF-8";
-/* ----Todas as demais mídeas----- ////////
+/* ----Todas as demais mídeas----- 
 -----------------------------
-
-/////---Pesquisar sobre ---Typical device Breakpoints----/////
---------------------------------------------------------------------
-Números abaixo feito pelo professor gustavo guanabara no ano de 2020--
-podem estar desatualizados
-site para consultar 
-https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp
-foi constatado que permanecem as mesmas configurações até 2022
---------------------------------------------------------------------
-Pequenas telas: até 600px
-Celular: de 600px até 768px
-Tablet:de 768 px até 992px
-Desktop: de 992px até 1200px
-Grandes telas: acima de 1200px
+Typical Device Breakpoints 
+------------------------------
+pequenas telas : até 600px
+celular:  de 600px até 768px
+tablet: de 768px até 992px
+desktop: de 992px até 1200px
+grandes telas: acima de 1200px
 */
 
-@media print { /*impressão*/
+
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    } 
+   body{
+    background-image: url(../imagens/back-print.jpg); /*desnecessario impressora não imprime backgraund */
+   }
+
+   main h1 {
+    text-shadow: none;
+    color: black;
+   }
+   main{
+    border: 2px solid black;
+    width: 90vw;
+   }
+   main::after {
+    content: 'Essa impressão foi feita através do site http://www.cursoemvideo.com';
+
+    
+   }
+     #phone {display: none;}
+     #tablet {display: none;}
+     #print {display: block;}
+     #pc {display: none;}
+     #tv {display: none;}
 
 }
-@media screen and (min-width: 768px) and (max-width: 992px) { /*tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) { 
     body {
         background-image: url(../imagens/back-tablet.jpg);
      }
@@ -32,7 +52,7 @@ Grandes telas: acima de 1200px
 
 
 }
-@media screen and (min-width: 992px) and (max-width: 1200px) { /*Desktop*/
+@media screen and (min-width: 992px) and (max-width: 1200px) { 
     body{
         background-image: url(../imagens/back-pc.jpg);
     }
@@ -43,10 +63,13 @@ Grandes telas: acima de 1200px
      #tv {display: none;}
 
 }
-@media screen and (min-width: 1200px) { /*grandes telas*/
+@media screen and (min-width: 1200px) { 
     body{
         background-image: url(../imagens/back-tv.jpg);
 
+    }
+    main{
+        width: 700px;
     }
      #phone {display: none;}
      #tablet {display: none;}
